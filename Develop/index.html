@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+    integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous" />
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+  <title>Work Day Scheduler</title>
+</head>
+
+<body>
+  <header class="jumbotron">
+    <h1 class="display-3">Work Day Scheduler</h1>
+    <p class="lead">A simple calendar app for scheduling your work day</p>
+    <p id="currentDay" class="lead"></p>
+  </header>
+  <div class="container timeblock-container">
+    <!-- Timeblocks go here -->
+    <form action="" method="POST">
+      <div class="row">
+        <div class="hour col-lg-1 col-2">
+          <div>9AM</div>
+        </div>
+        <textarea class="description col-lg-10 col-8 past" name="9amTasks" id="9amTasks"></textarea>
+        <button class="saveBtn col-lg-1 col-2" type="submit" id="9am-btn" data-time-block="9am">
+          <i class="fas fa-save fa-lg"></i>
+        </button>
+      </div>
+    </form>
+
+    <form action="" method="POST">
+      <div class="row">
+        <div class="hour col-lg-1 col-2">
+          <div>10AM</div>
+        </div>
+        <textarea class="description col-lg-10 col-8 past" name="10amTasks" id="10amTasks"></textarea>
+        <button class="saveBtn col-lg-1 col-2" type="submit" id="10am-btn"  data-time-block="10am">
+          <i class="fas fa-save fa-lg"></i>
+        </button>
+      </div>
+    </form>
+
+    <form action="" method="POST">
+      <div class="row">
+        <div class="hour col-lg-1 col-2">
+          <div>11AM</div>
+        </div>
+        <textarea class="description col-lg-10 col-8 past" name="11amTasks" id="11amTasks"></textarea>
+        <button class="saveBtn col-lg-1 col-2" type="submit" id="11am-btn" data-time-block="11am">
+          <i class="fas fa-save fa-lg"></i>
+        </button>
+      </div>
+    </form>
+
+    <form action="" method="POST">
+      <div class="row">
+        <div class="hour col-lg-1 col-2">
+          <div>12AM</div>
+        </div>
+        <textarea class="description col-lg-10 col-8 past" name="12pmTasks" id="12pmTasks"></textarea>
+        <button class="saveBtn col-lg-1 col-2" type="submit" id="12pm-btn" data-time-block="12pm">
+          <i class="fas fa-save fa-lg"></i>
+        </button>
+      </div>
+    </form>
+
+    <form action="" method="POST">
+      <div class="row">
+        <div class="hour col-lg-1 col-2">
+          <div>1PM</div>
+        </div>
+        <textarea class="description col-lg-10 col-8 past" name="1pmTasks" id="1pmTasks"></textarea>
+        <button class="saveBtn col-lg-1 col-2" type="submit" id="1pm-btn" data-time-block="1pm">
+          <i class="fas fa-save fa-lg"></i>
+        </button>
+      </div>
+    </form>
+
+    <form action="" method="POST">
+      <div class="row">
+        <div class="hour col-lg-1 col-2">
+          <div>2PM</div>
+        </div>
+        <textarea class="description col-lg-10 col-8 past" name="2pmTasks" id="2pmTasks"></textarea>
+        <button class="saveBtn col-lg-1 col-2" type="submit" id="2pm-btn" data-time-block="2pm">
+          <i class="fas fa-save fa-lg"></i>
+        </button>
+      </div>
+    </form>
+
+    <form action="" method="POST">
+      <div class="row">
+        <div class="hour col-lg-1 col-2">
+          <div>3PM</div>
+        </div>
+        <textarea class="description col-lg-10 col-8 past" name="3pmTasks" id="3pmTasks"></textarea>
+        <button class="saveBtn col-lg-1 col-2" type="submit" id="3pm-btn" data-time-block="3pm">
+          <i class="fas fa-save fa-lg"></i>
+        </button>
+      </div>
+    </form>
+
+    <form action="" method="POST">
+      <div class="row">
+        <div class="hour col-lg-1 col-2">
+          <div>4PM</div>
+        </div>
+        <textarea class="description col-lg-10 col-8 past" name="4pmTasks" id="4pmTasks"></textarea>
+        <button class="saveBtn col-lg-1 col-2" type="submit" id="4pm-btn" data-time-block="4pm">
+          <i class="fas fa-save fa-lg"></i>
+        </button>
+      </div>
+    </form>
+
+    <form action="" method="POST">
+      <div class="row">
+        <div class="hour col-lg-1 col-2">
+          <div>5PM</div>
+        </div>
+        <textarea class="description col-lg-10 col-8 past" name="5pmTasks" id="5pmTasks"></textarea>
+        <button class="saveBtn col-lg-1 col-2" type="submit" id="5pm-btn" data-time-block="5pm">
+          <i class="fas fa-save fa-lg"></i>
+        </button>
+      </div>
+    </form>
+
+
+
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+  <script src="script.js"></script>
+</body>
+
+</html>
