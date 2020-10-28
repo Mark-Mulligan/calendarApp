@@ -1,6 +1,17 @@
 let timeblockContainer = document.querySelector('.timeblock-container');
-
 let tasks = ['', '', '', '', '', '', '', '', ''];
+const today = moment();
+
+$('#currentDay').text(today.format('dddd, MMMM Do'));
+
+
+
+console.log(today.format('MMMM Do YYYY, h:mm:ss a'));
+console.log(today.format('dddd, MMMM Do'));
+console.log(today.format('h:mm:ss a'));
+console.log(today.format('ha'));
+
+
 
 tasks = JSON.parse(localStorage.getItem("taskList"));
 console.log(tasks);
