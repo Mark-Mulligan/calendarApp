@@ -4,13 +4,13 @@ let descriptionClasses = [];
 let hours = [9, 10, 11, 12, 13, 14, 15, 16, 17];
 const today = moment();
 
-tasks = JSON.parse(localStorage.getItem("taskList"));
 updateDateAndTime();
 
-$('.description').each(function (index) {
-    $(this).text(tasks[index]);
-    $(this).addClass(descriptionClasses[index]);
-})
+if (JSON.parse(localStorage.getItem("taskList"))) {
+    tasks = JSON.parse(localStorage.getItem("taskList"));
+}
+
+updateDescriptionClasses();
 
 $('.saveBtn').click(function (e) {
     event.preventDefault();
@@ -34,6 +34,13 @@ function updateDateAndTime() {
             descriptionClasses.splice(i, 0, 'future');
         }
     }
+}
+
+function updateDescriptionClasses () {
+    $('.description').each(function (index) {
+        $(this).text(tasks[index]);
+        $(this).addClass(descriptionClasses[index]);
+    });
 }
 
 function convertTimeToMilitary(input) {
