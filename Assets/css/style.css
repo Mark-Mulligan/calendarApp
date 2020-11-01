@@ -1,3 +1,4 @@
+/* MAIN ELEMENTS */
 body {
   font-family: 'Open Sans', sans-serif;
   font-size: 16px;
@@ -17,6 +18,7 @@ button {
   border: none;
 }
 
+/* TITLE SECTION */
 .jumbotron {
   text-align: center;
   background-color: transparent;
@@ -29,6 +31,7 @@ button {
   white-space: pre-wrap;
 }
 
+/* DAY PLANNER */
 .time-block{
   text-align: center;
   border-radius: 15px;
@@ -48,6 +51,7 @@ button {
   text-align: center;
 }
 
+/* COLOR STYLES DEPENDING ON TIME */
 .past {
   background-color: #d3d3d3;
   color: black;
@@ -63,6 +67,7 @@ button {
   color: black;
 }
 
+/* SAVE BUTTON */
 .saveBtn {
   border-left: 1px solid black;
   border-top-right-radius: 15px;
